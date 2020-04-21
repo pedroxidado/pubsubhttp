@@ -10,7 +10,7 @@ exports.publishEvent = async (req, res) => {
                 //topic not found
                 res.status(404).json({ message: `Topic ${req.params.topic} not found` });
             }
-            
+
             console.log(`Topic exists ${subscribers}`);
             let response = [];
 
